@@ -1,0 +1,105 @@
+body {
+  min-height: 50vh;
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 2vmin;
+  background-color: #555;
+  color: white;
+  margin: 3vmin 4vmin 2vmin 4vmin;
+}
+
+/* iPad portait */
+@media (max-width: 768px) {
+  body {
+    font-size: 3vmin;
+  }
+}
+
+/* iPhone landscape only */
+@media (max-width: 568px) {
+  body {
+    font-size: 4vmin;
+  }
+}
+
+/* iPhone portait only */
+@media (max-width: 320px) {
+  body {
+    font-size: 4vmin;
+  }
+}
+
+*:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1 {
+  padding-left: 60px;
+  line-height: 52px;
+  margin-top: 3vmin;
+}
+
+#logo {
+  float: left;
+  position: absolute;
+  top: 3vmin;
+}
+
+#github {
+  position: absolute;
+  top: 3.3vmin;
+  right: 4vmin;
+}
+
+#github-cat {
+  height: 4vh;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.button {
+  align-self: flex-end;
+}
+
+.between_buttons, input[type="checkbox"], label {
+  align-self: center;
+}
+
+button {
+    font-size: 1em;
+    padding: 5px 10px;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-color: white;
+    background-color: #333;
+}
+
+input[type="checkbox"] {
+  margin-left: 1vmin;
+}
+
+label {
+  margin-left: -1vmin;
+}
+
+textarea {
+  font-size: larger;
+  width: calc(100vw - 8vmin);
+  height: 76vh;
+  margin-top: 2vmin;
+}

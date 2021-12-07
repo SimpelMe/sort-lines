@@ -1,0 +1,47 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no" />
+  <link rel="stylesheet" href="style.css">
+  <title>Sort Lines</title>
+</head>
+
+<body onKeyDown="keys(event,'d')" onKeyUp="keys(event,'u')">
+  <header>
+    <nav>
+      <h1>Sort Lines</h1>
+      <a id="logo" class="cursordefault" href="/"><img src="../Simpel.png" alt="simpel icon" height="48" width="48"></a>
+      <a id="github" href="https://github.com/SimpelMe/sort-lines" target="_blank" title="watch source code">
+        <img id="github-cat" src="../github-cat-white.png" alt="github logo">
+      </a>
+    </nav>
+  </header>
+  <main>
+    <noscript>
+      <b>Warning: JavaScript had to be enabled.</b>
+      <br><br>
+    </noscript>
+    <details>
+      <summary>How to sort</summary>
+      <p>With this tool you can sort newline separated lines alphabetically.</p>
+      <p>You can either push the button "Paste, Sort, Unique &amp; Copy" where the clipboard content is used as content or fill in your lines into textarea and push the button "Sort, Unique &amp; Copy". In both cases the sorted result will be put back to clipboard.</p>
+    </details>
+<div class="flex">
+  <button class="button pastesortunique" title="click: paste + sort + unique + copy to clipboard" onclick="paste()">Paste, Sort, Unique &amp; Copy [1]</button>
+  <span class="between_buttons">or</span>
+  <button class="button sortunique" title="click: sort + unique + copy to clipboard" onclick="sort_and_copy()">Sort, Unique &amp; Copy [2]</button>
+  <input id="unique" type="checkbox" name="unique" checked>
+  <label for="unique">output unique lines only</label>
+</div>
+    <textarea autofocus placeholder="fill in lines to sort here …" spellcheck="false" autocomplete="off">
+</textarea>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
