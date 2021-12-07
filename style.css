@@ -99,7 +99,9 @@ label {
 
 textarea {
   font-size: larger;
-  width: calc(100vw - 8vmin);
-  height: 76vh;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  height: 50vh;
   margin-top: 2vmin;
 }
