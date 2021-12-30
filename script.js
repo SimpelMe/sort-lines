@@ -38,6 +38,14 @@ function sort_and_copy(ev){
   }
 
   lines = lines.sort(natural_compare);
+
+  // if there was an empty line it will be first array item now - remove
+  if (check_unique.checked) {
+    if (lines[0] == "") {
+      lines = lines.slice(1);
+    }
+  }
+
   textarea.value = lines.join("\n");
 
   window.getSelection().removeAllRanges();
