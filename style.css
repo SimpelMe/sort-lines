@@ -38,26 +38,27 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  padding-left: 60px;
-  line-height: 52px;
-  margin-top: 3vmin;
+header {
+  margin-bottom: 1.5em;
 }
 
-#logo {
-  float: left;
-  position: absolute;
-  top: 3vmin;
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
 }
 
 #github {
-  position: absolute;
-  top: 3.3vmin;
-  right: 4vmin;
+  margin-left: auto;
 }
 
 #github-cat {
-  height: 4vh;
+  height: 1.5em;
 }
 
 .flex {
