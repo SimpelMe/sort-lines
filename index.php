@@ -2,24 +2,13 @@
 <html dir="ltr" lang="en-US">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="translucent black" />
-  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no" />
+  <?php include dirname($_SERVER['DOCUMENT_ROOT']) . "/simpel.cc/php/head.php"; ?>
   <link rel="stylesheet" href="style.css">
-  <title>Sort Lines</title>
 </head>
 
 <body onKeyDown="keys(event,'d')" onKeyUp="keys(event,'u')">
   <header>
-    <nav>
-      <a id="logo" class="cursordefault" href="/"><img src="../Simpel.png" alt="simpel icon" height="48" width="48" title="simpel.cc" aria-label="go to simpel dot c c"></a>
-      <h1>Sort Lines</h1>
-      <a id="github" href="https://github.com/SimpelMe/sort-lines" target="_blank" rel="noopener noreferrer" title="watch source code" aria-label="go to source code at github dot com">
-        <img id="github-cat" src="../github.svg" alt="github logo">
-      </a>
-    </nav>
+    <?php include dirname($_SERVER['DOCUMENT_ROOT']) . "/simpel.cc/php/header.php"; ?>
   </header>
   <main>
     <noscript>
