@@ -3,7 +3,7 @@
 
 <head>
   <?php include dirname($_SERVER['DOCUMENT_ROOT']) . "/simpel.cc/php/head.php"; ?>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body onKeyDown="keys(event,'d')" onKeyUp="keys(event,'u')">
@@ -35,6 +35,6 @@
     <textarea id="textarea" autofocus placeholder="fill in lines to sort here …" spellcheck="false" autocomplete="off"></textarea>
   </main>
 </body>
-<script src="script.js"></script>
+<script src="script.min.js"></script>
 
 </html>
